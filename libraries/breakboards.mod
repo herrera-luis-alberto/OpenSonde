@@ -1,0 +1,99 @@
+PCBNEW-LibModule-V1  Tue 18 Dec 2012 10:20:20 PM CLST
+# encoding utf-8
+$INDEX
+LogicLevelConverter
+$EndINDEX
+$MODULE LogicLevelConverter
+Po 0 0 0 15 50D115E0 00000000 ~~
+Li LogicLevelConverter
+Sc 00000000
+AR 
+Op 0 0 0
+T0 -500 500 600 600 900 120 N V 21 N "LogicLevelConverter"
+T1 1000 0 600 600 900 120 N V 21 N "VAL**"
+$PAD
+Sh "1" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2000 -2500
+$EndPAD
+$PAD
+Sh "2" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2000 -1500
+$EndPAD
+$PAD
+Sh "3" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2000 -500
+$EndPAD
+$PAD
+Sh "4" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2000 500
+$EndPAD
+$PAD
+Sh "5" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2000 1500
+$EndPAD
+$PAD
+Sh "6" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2000 2500
+$EndPAD
+$PAD
+Sh "7" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2000 2500
+$EndPAD
+$PAD
+Sh "8" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2000 1500
+$EndPAD
+$PAD
+Sh "9" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2000 500
+$EndPAD
+$PAD
+Sh "10" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2000 -500
+$EndPAD
+$PAD
+Sh "11" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2000 -1500
+$EndPAD
+$PAD
+Sh "12" C 600 600 0 0 0
+Dr 320 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2000 -2500
+$EndPAD
+$EndMODULE  LogicLevelConverter
+$EndLIBRARY
