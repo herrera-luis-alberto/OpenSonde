@@ -1,0 +1,171 @@
+EESchema Schematic File Version 2  date Thu 20 Dec 2012 08:02:53 PM CLST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:breakboards
+LIBS:opensondebus
+EELAYER 43  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "20 dec 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7425 1775 7425 1925
+Wire Wire Line
+	6750 1800 6750 1850
+Wire Wire Line
+	6750 1850 6900 1850
+Wire Wire Line
+	6900 1850 6900 1775
+Wire Wire Line
+	4375 1325 4275 1325
+Wire Wire Line
+	5225 1925 5225 2000
+Wire Wire Line
+	4375 2850 4375 2650
+Wire Wire Line
+	4375 2850 6100 2850
+Wire Wire Line
+	6100 2850 6100 2600
+Wire Wire Line
+	4475 2650 4575 2650
+Wire Wire Line
+	4575 2650 4575 2775
+Wire Wire Line
+	4575 2775 5900 2775
+Wire Wire Line
+	5900 2775 5900 2600
+Wire Wire Line
+	4375 2650 4275 2650
+Wire Wire Line
+	4475 1325 4575 1325
+Wire Wire Line
+	5400 1825 5400 2000
+Wire Wire Line
+	5400 2000 5225 2000
+Wire Wire Line
+	7175 1775 7175 1850
+Wire Wire Line
+	7175 1850 7050 1850
+Wire Wire Line
+	7050 1850 7050 1750
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 50D37083
+P 5400 1825
+F 0 "#FLG01" H 5400 1920 30  0001 C CNN
+F 1 "PWR_FLAG" H 5400 2005 30  0000 C CNN
+	1    5400 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 50D3707C
+P 7425 1775
+F 0 "#FLG02" H 7425 1870 30  0001 C CNN
+F 1 "PWR_FLAG" H 7425 1955 30  0000 C CNN
+	1    7425 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 50D37079
+P 7175 1775
+F 0 "#FLG03" H 7175 1870 30  0001 C CNN
+F 1 "PWR_FLAG" H 7175 1955 30  0000 C CNN
+	1    7175 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 50D37072
+P 6900 1775
+F 0 "#FLG04" H 6900 1870 30  0001 C CNN
+F 1 "PWR_FLAG" H 6900 1955 30  0000 C CNN
+	1    6900 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 50D37060
+P 7425 1925
+F 0 "#PWR05" H 7425 1925 30  0001 C CNN
+F 1 "GND" H 7425 1855 30  0001 C CNN
+	1    7425 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 50D3705A
+P 6750 1800
+F 0 "#PWR06" H 6750 1890 20  0001 C CNN
+F 1 "+5V" H 6750 1890 30  0000 C CNN
+	1    6750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR07
+U 1 1 50D37053
+P 7050 1750
+F 0 "#PWR07" H 7050 1710 30  0001 C CNN
+F 1 "+3.3V" H 7050 1860 30  0000 C CNN
+	1    7050 1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5900 1450
+NoConn ~ 6100 1450
+$Comp
+L OPENSONDEBUS B1
+U 1 1 50D36F7F
+P 4450 1950
+F 0 "B1" H 4450 1950 60  0000 C CNN
+F 1 "OPENSONDEBUS" H 4450 1950 60  0000 C CNN
+	1    4450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L BMP085 U1
+U 1 1 50D36F6E
+P 6000 2050
+F 0 "U1" H 6000 2050 60  0000 C CNN
+F 1 "BMP085" H 6000 2050 60  0000 C CNN
+	1    6000 2050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
