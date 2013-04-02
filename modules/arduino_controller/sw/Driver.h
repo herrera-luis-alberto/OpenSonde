@@ -1,3 +1,5 @@
+#ifndef DRIVER_H_
+#define DRIVER_H_
 /* Driver class */
 #include <Arduino.h>
 
@@ -13,6 +15,9 @@ public:
 protected:
   /// Reads one byte from address.
   uint8_t ReadChar(uint8_t address);
-  /// Read two bytes from address and adress+1.
+  /// Read two bytes from address and adress+1. MSB first.
   uint16_t ReadWord(uint16_t address);
+  /// Write a byte.
+  void WriteChar(uint8_t address, uint8_t data);
 };
+#endif  // DRIVER_H_
