@@ -1,0 +1,108 @@
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Tue Apr  9 07:49:38 2013
+
+BeginCmp
+TimeStamp = /51630FF5;
+Reference = B1;
+ValeurCmp = OPENSONDEBUS;
+IdModule  = OpenSondeBus;
+EndCmp
+
+BeginCmp
+TimeStamp = /5163190A;
+Reference = C1;
+ValeurCmp = 0.1u;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /51631145;
+Reference = C2;
+ValeurCmp = 0.1u;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /516311E3;
+Reference = C3;
+ValeurCmp = 22p;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /516311E8;
+Reference = C4;
+ValeurCmp = 22p;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /51631984;
+Reference = C5;
+ValeurCmp = 0.1u;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /516310E5;
+Reference = IC1;
+ValeurCmp = ATMEGA328P-A;
+IdModule  = TQFP32;
+EndCmp
+
+BeginCmp
+TimeStamp = /5163FE51;
+Reference = P1;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51631B98;
+Reference = P2;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51631B9B;
+Reference = P3;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51631B9E;
+Reference = P4;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5163FE58;
+Reference = P5;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5163FE5D;
+Reference = P6;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51631928;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /516311C4;
+Reference = X1;
+ValeurCmp = CRYSTAL;
+IdModule  = HC-49V;
+EndCmp
+
+EndListe
