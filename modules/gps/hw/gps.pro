@@ -1,4 +1,4 @@
-update=Tue 18 Dec 2012 05:23:42 PM CLST
+update=Mon Apr  8 15:58:47 2013
 version=1
 last_client=pcbnew
 [general]
@@ -87,7 +87,7 @@ DrawLar=150
 EdgeLar=150
 TxtLar=120
 MSegLar=150
-LastNetListRead=
+LastNetListRead=arduino.net
 [pcbnew/libraries]
 LibDir=../../../libraries
 LibName1=sockets

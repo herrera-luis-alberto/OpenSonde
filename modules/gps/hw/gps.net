@@ -1,115 +1,123 @@
-# EESchema Netlist Version 1.1 created  Tue 18 Dec 2012 05:25:37 PM CLST
+# EESchema Netlist Version 1.1 created  Fri May  3 10:38:58 2013
 (
- ( /50D0CFF9 $noname  P6 CONN_1 {Lib=CONN_1}
-  (    1 +5V )
+ ( /51630FF5 OpenSondeBus B1 OPENSONDEBUS
+  ( 1 GND )
+  ( 2 N-000027 )
+  ( 3 N-000027 )
+  ( 4 GND )
+  ( 5 GND )
+  ( 6 N-000028 )
+  ( 7 N-000028 )
+  ( 8 GND )
+  ( 9 GND )
+  ( 10 /SDA )
+  ( 11 /SDA )
+  ( 12 GND )
+  ( 13 GND )
+  ( 14 /SCL )
+  ( 15 /SCL )
+  ( 16 GND )
+  ( 17 ? )
+  ( 18 ? )
+  ( 19 GND )
+  ( 20 GND )
+  ( 21 GND )
+  ( 22 +5V )
+  ( 23 +5V )
+  ( 24 GND )
+  ( 25 GND )
+  ( 26 GND )
+  ( 27 +3.3V )
+  ( 28 +3.3V )
  )
- ( /50D0CF95 $noname  P5 CONN_1 {Lib=CONN_1}
-  (    1 GND )
+ ( /5163190A SM1206 C1 0.1u
+  ( 1 +5V )
+  ( 2 GND )
  )
- ( /50D0CF85 $noname  P1 CONN_1 {Lib=CONN_1}
-  (    1 N-000010 )
+ ( /51631145 SM1206 C2 0.1u
+  ( 1 N-000006 )
+  ( 2 GND )
  )
- ( /50D0CF7D $noname  P2 CONN_1 {Lib=CONN_1}
-  (    1 N-000016 )
+ ( /516311E3 SM1206 C3 22p
+  ( 1 N-000019 )
+  ( 2 GND )
  )
- ( /50D0CF77 $noname  P3 CONN_1 {Lib=CONN_1}
-  (    1 N-000018 )
+ ( /516311E8 SM1206 C4 22p
+  ( 1 N-000020 )
+  ( 2 GND )
  )
- ( /50D0CF6F $noname  P4 CONN_1 {Lib=CONN_1}
-  (    1 N-000008 )
+ ( /51631984 SM1206 C5 0.1u
+  ( 1 N-000016 )
+  ( 2 /DTR )
  )
- ( /50D0CF10 $noname  C1 0.1u {Lib=C}
-  (    1 +5V )
-  (    2 GND )
+ ( /516310E5 TQFP32 IC1 ATMEGA328P-A
+  ( 1 ? )
+  ( 2 ? )
+  ( 3 GND )
+  ( 4 +5V )
+  ( 5 GND )
+  ( 6 +5V )
+  ( 7 N-000019 )
+  ( 8 N-000020 )
+  ( 9 ? )
+  ( 10 ? )
+  ( 11 ? )
+  ( 12 ? )
+  ( 13 ? )
+  ( 14 ? )
+  ( 15 N-000030 )
+  ( 16 N-000033 )
+  ( 17 N-000031 )
+  ( 18 +5V )
+  ( 19 ? )
+  ( 20 N-000006 )
+  ( 21 GND )
+  ( 22 ? )
+  ( 23 ? )
+  ( 24 ? )
+  ( 25 ? )
+  ( 26 ? )
+  ( 27 /SDA )
+  ( 28 /SCL )
+  ( 29 N-000016 )
+  ( 30 /RXI )
+  ( 31 /TXO )
+  ( 32 ? )
  )
- ( /50D0CE76 TQFP32  IC1 ATMEGA8-AI {Lib=ATMEGA8-AI}
-  (    1 ? )
-  (    2 ? )
-  (    3 GND )
-  (    4 +5V )
-  (    5 GND )
-  (    6 +5V )
-  (    7 N-000015 )
-  (    8 N-000019 )
-  (    9 ? )
-  (   10 ? )
-  (   11 ? )
-  (   12 ? )
-  (   13 ? )
-  (   14 ? )
-  (   15 N-000016 )
-  (   16 N-000018 )
-  (   17 N-000008 )
-  (   18 +5V )
-  (   19 ? )
-  (   20 +5V )
-  (   21 GND )
-  (   22 ? )
-  (   23 ? )
-  (   24 ? )
-  (   25 ? )
-  (   26 ? )
-  (   27 /SDA )
-  (   28 /SCL )
-  (   29 N-000010 )
-  (   30 N-000024 )
-  (   31 ? )
-  (   32 ? )
+ ( /5163FE51 SIL-1 P1 CONN_1
+  ( 1 /RXI )
  )
- ( /50D0B9F1 $noname  C4 0.1u {Lib=C}
-  (    1 +5V )
-  (    2 GND )
+ ( /51631B98 SIL-1 P2 CONN_1
+  ( 1 N-000030 )
  )
- ( /50D0B493 $noname  K1 CONN_3 {Lib=CONN_3}
-  (    1 N-000024 )
-  (    2 +5V )
-  (    3 GND )
+ ( /51631B9B SIL-1 P3 CONN_1
+  ( 1 N-000033 )
  )
- ( /50D0B3B5 $noname  R1 10k {Lib=R}
-  (    1 +5V )
-  (    2 N-000010 )
+ ( /51631B9E SIL-1 P4 CONN_1
+  ( 1 N-000031 )
  )
- ( /50D0B394 $noname  X1 CRYSTAL {Lib=CRYSTAL}
-  (    1 N-000015 )
-  (    2 N-000019 )
+ ( /5163FE58 SIL-1 P5 CONN_1
+  ( 1 /TXO )
  )
- ( /50D0B382 $noname  C3 22pf {Lib=C}
-  (    1 N-000019 )
-  (    2 GND )
+ ( /5163FE5D SIL-1 P6 CONN_1
+  ( 1 /DTR )
  )
- ( /50D0B37E $noname  C2 22p {Lib=C}
-  (    1 N-000015 )
-  (    2 GND )
+ ( /5177F32E SIL-1 P7 CONN_1
+  ( 1 N-000016 )
  )
- ( /50D0B0FB $noname  B1 OPENSONDEBUS {Lib=OPENSONDEBUS}
-  (    1 GND )
-  (    2 ? )
-  (    3 ? )
-  (    4 GND )
-  (    5 GND )
-  (    6 ? )
-  (    7 ? )
-  (    8 GND )
-  (    9 GND )
-  (   10 /SDA )
-  (   11 /SDA )
-  (   12 GND )
-  (   13 GND )
-  (   14 /SCL )
-  (   15 /SCL )
-  (   16 GND )
-  (   17 ? )
-  (   18 ? )
-  (   19 GND )
-  (   20 GND )
-  (   21 GND )
-  (   22 +5V )
-  (   23 +5V )
-  (   24 GND )
-  (   25 GND )
-  (   26 GND )
-  (   27 +3.3V )
-  (   28 +3.3V )
+ ( /5183CBB9 SIL-4 P8 CONN_4
+  ( 1 +5V )
+  ( 2 /RXI )
+  ( 3 /TXO )
+  ( 4 GND )
+ )
+ ( /51631928 SM1206 R1 10K
+  ( 1 N-000016 )
+  ( 2 +5V )
+ )
+ ( /516311C4 HC-49V X1 CRYSTAL
+  ( 1 N-000019 )
+  ( 2 N-000020 )
  )
 )
 *
@@ -119,10 +127,22 @@ $component C1
  C?
  C1-1
 $endlist
-$component IC1
- TQFP32
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
 $endlist
 $component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
  SM*
  C?
  C1-1
@@ -134,89 +154,5 @@ $component R1
  R?-*
  SM1206
 $endlist
-$component C3
- SM*
- C?
- C1-1
-$endlist
-$component C2
- SM*
- C?
- C1-1
-$endlist
 $endfootprintlist
 }
-{ Pin List by Nets
-Net 1 "+5V" "+5V"
- IC1 18
- P6 1
- C4 1
- B1 22
- IC1 20
- B1 23
- IC1 6
- IC1 4
- R1 1
- K1 2
- C1 1
-Net 8 "" ""
- P4 1
- IC1 17
-Net 10 "" ""
- R1 2
- P1 1
- IC1 29
-Net 11 "/SCL" "SCL"
- B1 14
- B1 15
- IC1 28
-Net 12 "+3.3V" "+3.3V"
- B1 27
- B1 28
-Net 13 "/SDA" "SDA"
- IC1 27
- B1 11
- B1 10
-Net 15 "" ""
- IC1 7
- C2 1
- X1 1
-Net 16 "" ""
- IC1 15
- P2 1
-Net 18 "" ""
- P3 1
- IC1 16
-Net 19 "" ""
- X1 2
- C3 1
- IC1 8
-Net 22 "GND" "GND"
- B1 12
- IC1 21
- C1 2
- P5 1
- IC1 5
- IC1 3
- B1 25
- B1 24
- B1 13
- B1 16
- K1 3
- C2 2
- C4 2
- C3 2
- B1 21
- B1 20
- B1 9
- B1 26
- B1 8
- B1 5
- B1 4
- B1 1
- B1 19
-Net 24 "" ""
- K1 1
- IC1 30
-}
-#End
