@@ -11,7 +11,7 @@ public:
   virtual void SetUp()=0;
   /// this function will be called by the controller to pull data from your
   /// device.
-  virtual void Callback()=0;
+  virtual void Callback(Print &data_transmitter)=0;
 protected:
   /// Reads one byte from address.
   uint8_t ReadChar(uint8_t address);

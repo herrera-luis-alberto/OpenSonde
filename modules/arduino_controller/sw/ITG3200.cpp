@@ -6,7 +6,7 @@ void ITG3200Driver::SetUp() {
   WriteChar(DLPF, FS_SEL<<3 | DLPF_CFG);
 }
 
-void ITG3200Driver::Callback() {
+void ITG3200Driver::Callback(Print &data_transmitter) {
   uint16_t output_X;
   uint16_t output_Y;
   uint16_t output_Z;

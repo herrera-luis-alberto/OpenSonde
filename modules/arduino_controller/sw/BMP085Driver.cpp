@@ -33,19 +33,20 @@ void BMP085Driver::SetUp() {
   md = ReadWord(0xBE);
 }
 
-void BMP085Driver::Callback() {
+void BMP085Driver::Callback(Print &data_transmitter) {
   short temperature;
   long pressure;
   
   temperature = bmp085GetTemperature(bmp085ReadUT());
   pressure = bmp085GetPressure(bmp085ReadUP());
-  Serial.print("Temperature: ");
-  Serial.print(temperature, DEC);
-  Serial.println(" *0.1 deg C");
-  Serial.print("Pressure: ");
-  Serial.print(pressure, DEC);
-  Serial.println(" Pa");
-  Serial.println();
+  data_transmitter.print("<");
+  data_transmitter.print(DeviceAddress(), HEX);
+  data_transmitter.print(",");
+  data_transmitter.print(temperature, DEC);
+  data_transmitter.print(",");
+  data_transmitter.print(pressure, DEC);
+  data_transmitter.print(">");
+  data_transmitter.println();
 }
 
 
