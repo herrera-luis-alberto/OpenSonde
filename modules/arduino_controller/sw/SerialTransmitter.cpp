@@ -21,7 +21,7 @@ void SerialTransmitterDriver::Callback(Print &data_transmitter) {
 
 size_t SerialTransmitterDriver::write(uint8_t c) {
   // busy waiting for data in the transmitting FIFO.
-  while(ReadRegister(LSR) & 0x10 == 0){
+  while(ReadRegister(TXLVL) == 0){
   }
   WriteRegister(THR, c);
 }
