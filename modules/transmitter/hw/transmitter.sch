@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue Apr 23 16:01:54 2013
+EESchema Schematic File Version 2  date Fri May 24 16:07:33 2013
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "23 apr 2013"
+Date "24 may 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 2250 4950 0    60   ~ 0
+Copyright UNIVERSIDAD DE CHILE 2013.\n\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1 or later.\n\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions
 Wire Wire Line
 	6950 1150 7250 1150
 Wire Wire Line
