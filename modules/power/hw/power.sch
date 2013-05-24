@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 18 Dec 2012 10:56:01 AM CLST
+EESchema Schematic File Version 2  date Fri May 24 15:58:37 2013
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "Power Module"
-Date "18 dec 2012"
+Date "24 may 2013"
 Rev ""
 Comp "Universidad de Chile"
 Comment1 ""
@@ -44,6 +44,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 5100 1750 0    60   ~ 0
+Copyright UNIVERSIDAD DE CHILE 2013.\n\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1 or later.\n\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions
 Connection ~ 3250 4100
 Wire Wire Line
 	3050 4100 3350 4100
