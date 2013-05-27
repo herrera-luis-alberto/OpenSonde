@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri May  3 10:57:58 2013
+EESchema Schematic File Version 2  date Mon May 27 15:40:44 2013
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,13 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:opensondebus
+LIBS:gps-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "3 may 2013"
+Date "27 may 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -44,6 +45,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 5600 2100 0    60   ~ 0
+Copyright UNIVERSIDAD DE CHILE 2013.\n\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1 or later.\n\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions
 Wire Wire Line
 	8725 5650 8725 5825
 Connection ~ 7975 5250
@@ -140,8 +143,6 @@ Wire Wire Line
 Wire Wire Line
 	5250 3325 5250 3425
 Wire Wire Line
-	9900 5000 9750 5000
-Wire Wire Line
 	7900 5250 8100 5250
 Wire Wire Line
 	8050 5150 8050 5450
@@ -212,15 +213,6 @@ F 0 "P7" H 9530 5250 40  0000 L CNN
 F 1 "CONN_1" H 9450 5305 30  0001 C CNN
 	1    9450 5250
 	0    1    1    0   
-$EndComp
-$Comp
-L CONN_1 P6
-U 1 1 5163FE5D
-P 10050 5000
-F 0 "P6" H 10130 5000 40  0000 L CNN
-F 1 "CONN_1" H 10050 5055 30  0001 C CNN
-	1    10050 5000
-	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_1 P5
@@ -338,8 +330,6 @@ F 1 "CONN_1" H 8000 3305 30  0001 C CNN
 	1    8000 3250
 	0    -1   -1   0   
 $EndComp
-Text Label 9750 5000 0    60   ~ 0
-DTR
 Text Label 7900 5250 0    60   ~ 0
 TXO
 Text Label 7900 5150 0    60   ~ 0
@@ -352,15 +342,6 @@ Text Label 7900 4800 0    60   ~ 0
 SDA
 Text Label 7900 4900 0    60   ~ 0
 SCL
-$Comp
-L CSMALL C5
-U 1 1 51631984
-P 9650 5000
-F 0 "C5" H 9675 5050 30  0000 L CNN
-F 1 "0.1u" H 9675 4950 30  0000 L CNN
-	1    9650 5000
-	0    -1   -1   0   
-$EndComp
 $Comp
 L R R1
 U 1 1 51631928
