@@ -1,0 +1,8 @@
+********************************************************************************
+*                                 CONTRIB.TXT                                  *
+********************************************************************************
+Contact point of any Licensor who wishes to receive modified Documentation:
+
+Marcos Diaz <mdiazq@ing.uchile.cl>
+Luis Alberto Herrera <herrera.luis.alberto@gmail.com>
+********************************************************************************
