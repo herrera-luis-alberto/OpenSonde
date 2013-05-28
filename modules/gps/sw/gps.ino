@@ -16,12 +16,10 @@ void setup() {
   Serial.begin(19200);
   Wire.begin(SLAVE_ADDRESS);
   Wire.onRequest(requestEvent);
-  Serial.println("Init");
 }
 
 void loop() {
   char parsing_buffer[32];
-  Serial.println("> ");
   reader.fetchPositionData(Serial);
   Registers[0] = atol(reader.getRawData(UTCTime));
   if (reader.getRawData(NSIndicator)[0] == 'S') {
@@ -40,11 +38,6 @@ void loop() {
   Registers[2] = atol(parsing_buffer);
   Registers[3] = atol(reader.getRawData(MSLAltitude));
 
-  Serial.println(Registers[0]);
-  Serial.println(Registers[1]);
-  Serial.println(Registers[2]);
-  Serial.println(Registers[3]);
-  Serial.println("OK");
 }
 
 void requestEvent() {
