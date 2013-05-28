@@ -2,12 +2,14 @@
 #include "ITG3200.h"
 #include "Sensirion.h"
 #include "SerialTransmitter.h"
+#include "gps.h"
 #include <Wire.h>
 
 BMP085Driver bmp085;
 ITG3200Driver gyroscope;
 SensirionDriver sensirion;
 SerialTransmitterDriver transmitter;
+GPSDriver gps;
 
 /** SetUp itinialize all peripheral drivers. */
 void setup()
@@ -18,7 +20,7 @@ void setup()
   bmp085.SetUp();
   //gyroscope.SetUp();
   sensirion.SetUp();
-
+  gps.SetUp();
 }
 
 /** Loop call the callback function of the drivers. */
@@ -26,5 +28,6 @@ void loop()
 {
   bmp085.Callback(transmitter);
   sensirion.Callback(transmitter);
+  gps.Callback(transmitter);
   delay(1000);
 }

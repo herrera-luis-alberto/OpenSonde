@@ -22,10 +22,22 @@ void GPSDriver::Callback(Print &data_transmitter) {
   data_transmitter.print("<");
   data_transmitter.print(DeviceAddress(), HEX);
   
-  for (uint8_t i = 0; i < gps_fields_number; i++) {
-    data_transmitter.print(", ");
-    data_transmitter.print(gps_data[i], DEC);
-  }
+  data_transmitter.print(",");
+  data_transmitter.print(gps_data[0]/1000, DEC);
+  data_transmitter.print(".");
+  data_transmitter.print(gps_data[0]%1000, DEC);
+  data_transmitter.print(", ");
+  data_transmitter.print(gps_data[1]/10000, DEC);
+  data_transmitter.print(".");
+  data_transmitter.print(abs(gps_data[1])%10000, DEC);
+  data_transmitter.print(", ");
+  data_transmitter.print(gps_data[2]/10000, DEC);
+  data_transmitter.print(".");
+  data_transmitter.print(abs(gps_data[2])%10000, DEC);
+  data_transmitter.print(", ");
+  data_transmitter.print(gps_data[3]/10, DEC);
+  data_transmitter.print(".");
+  data_transmitter.print(abs(gps_data[3])%10, DEC);
 
   data_transmitter.println(">");
 }
