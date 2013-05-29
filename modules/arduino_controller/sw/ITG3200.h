@@ -23,7 +23,7 @@ class ITG3200Driver : public Driver {
 public:
   virtual uint8_t DeviceAddress() { return 0x69; };
   virtual void SetUp();
-  virtual void Callback(Print &data_transmitter);
+  virtual void Poll(Print &data_transmitter);
 private:
   // Configurations
   const unsigned char FS_SEL = 3;

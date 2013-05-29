@@ -23,7 +23,7 @@
 void SensirionDriver::SetUp() {
 }
 
-void SensirionDriver::Callback(Print &data_transmitter) {
+void SensirionDriver::Poll(Print &data_transmitter) {
   Wire.requestFrom(DeviceAddress(), 4);
   while(Wire.available() < 4)
     ;

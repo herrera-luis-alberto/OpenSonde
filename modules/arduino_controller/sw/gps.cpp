@@ -23,7 +23,7 @@
 void GPSDriver::SetUp() {
 }
 
-void GPSDriver::Callback(Print &data_transmitter) {
+void GPSDriver::Poll(Print &data_transmitter) {
   const uint8_t gps_fields_number = 4;
   const uint8_t bytes_to_transfer = gps_fields_number*sizeof(long);
   long gps_data[gps_fields_number];

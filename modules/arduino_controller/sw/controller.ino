@@ -45,8 +45,8 @@ void setup()
 /** Loop call the callback function of the drivers. */
 void loop()
 {
-  bmp085.Callback(transmitter);
-  sensirion.Callback(transmitter);
-  gps.Callback(transmitter);
+  bmp085.Poll(transmitter);
+  sensirion.Poll(transmitter);
+  gps.Poll(transmitter);
   delay(1000);
 }

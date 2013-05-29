@@ -23,7 +23,7 @@ class SerialTransmitterDriver : public Driver, public Print {
 public:
   virtual uint8_t DeviceAddress() { return 0x4D; };
   virtual void SetUp();
-  virtual void Callback(Print &data_transmitter);
+  virtual void Poll(Print &data_transmitter);
   virtual size_t write(uint8_t);
 private:
   // Writes the register for channel A.

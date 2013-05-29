@@ -34,7 +34,7 @@ void SerialTransmitterDriver::SetUp() {
   WriteRegister(FCR, 0x07);
 }
 
-void SerialTransmitterDriver::Callback(Print &data_transmitter) {
+void SerialTransmitterDriver::Poll(Print &data_transmitter) {
   // do nothing
 }
 

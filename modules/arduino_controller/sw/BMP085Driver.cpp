@@ -33,7 +33,7 @@ void BMP085Driver::SetUp() {
   md = ReadWord(0xBE);
 }
 
-void BMP085Driver::Callback(Print &data_transmitter) {
+void BMP085Driver::Poll(Print &data_transmitter) {
   short temperature;
   long pressure;
   
