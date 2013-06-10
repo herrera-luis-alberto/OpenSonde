@@ -18,7 +18,6 @@
  */
 
 #include "ITG3200.h"
-#include <Wire.h>
 
 void ITG3200Driver::SetUp() {
   WriteChar(DLPF, FS_SEL<<3 | DLPF_CFG);

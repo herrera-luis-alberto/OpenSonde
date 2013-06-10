@@ -20,37 +20,32 @@
 #include "Driver.h"
 #include <Wire.h>
 
-
-uint8_t Driver::ReadChar(uint8_t address) {
+void Driver::ReadBuffer(uint8_t address, uint8_t *buffer, uint8_t size) {
   uint8_t device_adress = DeviceAddress();
 
   Wire.beginTransmission(device_adress);
   Wire.write(address);
   Wire.endTransmission();
 
-  Wire.requestFrom(device_adress, 1);
-  while(Wire.available() < 1)
+  Wire.requestFrom(device_adress, size);
+  while(Wire.available() < size)
     ;
 
-  return Wire.read();
+  for (uint8_t i = 0; i < size; i++) {
+    buffer[i] = Wire.read();
+  }
 }
 
-uint16_t Driver::ReadWord(uint16_t address) {
-  uint8_t device_adress = DeviceAddress();
-  
-  Wire.beginTransmission(device_adress);
-  Wire.write(address);
-  Wire.endTransmission();
-  
-  Wire.requestFrom(device_adress, 2);
-  while(Wire.available() < 2)
-    ;
+uint8_t Driver::ReadChar(uint8_t address) {
+  uint8_t result;
+  ReadBuffer(address, &result, 1);
+  return result;
+}
 
-  uint8_t msb, lsb;
-  msb = Wire.read();
-  lsb = Wire.read();
-
-  return msb<<8 | lsb;
+uint16_t Driver::ReadWord(uint8_t address) {
+  uint8_t buffer[2];
+  ReadBuffer(address, buffer, 2);
+  return buffer[0]<<8 | buffer[1];
 }
 
 void Driver::WriteChar(uint8_t address, uint8_t data) {

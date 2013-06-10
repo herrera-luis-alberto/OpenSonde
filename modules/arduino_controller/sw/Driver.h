@@ -32,10 +32,12 @@ public:
   /// device.
   virtual void Poll(Print &data_transmitter)=0;
 protected:
+  /// Reads size bytes starting form register address into buffer.
+  void ReadBuffer(uint8_t address, uint8_t *buffer, uint8_t size);
   /// Reads one byte from address.
   uint8_t ReadChar(uint8_t address);
   /// Read two bytes from address and adress+1. MSB first.
-  uint16_t ReadWord(uint16_t address);
+  uint16_t ReadWord(uint8_t address);
   /// Write a byte.
   void WriteChar(uint8_t address, uint8_t data);
 };

@@ -18,7 +18,6 @@
  */
 
 #include "SerialTransmitter.h"
-#include <Wire.h>
 
 void SerialTransmitterDriver::SetUp() {
   // Software reset.

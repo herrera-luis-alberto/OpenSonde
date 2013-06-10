@@ -18,26 +18,17 @@
  */
 
 #include "Sensirion.h"
-#include <Wire.h>
 
 void SensirionDriver::SetUp() {
 }
 
 void SensirionDriver::Poll(Print &data_transmitter) {
-  Wire.requestFrom(DeviceAddress(), 4);
-  while(Wire.available() < 4)
-    ;
+  uint8_t buffer[4];
+  ReadBuffer(0x00, buffer, 4);
 
-  uint8_t msb, lsb;
-  
-  msb = Wire.read();
-  lsb = Wire.read();
-  uint16_t temperature = msb<<8 | lsb;
-  
-  msb = Wire.read();
-  lsb = Wire.read();
-  uint16_t humidity = msb<<8 | lsb;
-  
+  uint16_t temperature = buffer[0]<<8 | buffer[1];
+  uint16_t humidity = buffer[2]<<8 | buffer[3];
+
   data_transmitter.print("<");
   data_transmitter.print(DeviceAddress(), HEX);
   data_transmitter.print(", ");
