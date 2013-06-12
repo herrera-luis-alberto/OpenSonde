@@ -23,6 +23,7 @@
 #include "SerialTransmitter.h"
 #include "gps.h"
 #include <Wire.h>
+#include <avr/wdt.h>
 
 BMP085Driver bmp085;
 ITG3200Driver gyroscope;
@@ -33,11 +34,12 @@ GPSDriver gps;
 /** SetUp itinialize all peripheral drivers. */
 void setup()
 {
+  wdt_disable();
+  wdt_enable (WDTO_2S);
   Wire.begin();
   transmitter.SetUp();
   transmitter.println("INIT");
   bmp085.SetUp();
-  //gyroscope.SetUp();
   sensirion.SetUp();
   gps.SetUp();
 }
@@ -45,8 +47,10 @@ void setup()
 /** Loop call the callback function of the drivers. */
 void loop()
 {
+  wdt_reset();
   bmp085.Poll(transmitter);
   sensirion.Poll(transmitter);
   gps.Poll(transmitter);
+  wdt_reset();
   delay(1000);
 }
